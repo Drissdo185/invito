@@ -9,16 +9,21 @@ export function AnimatedInvitation() {
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50/90 via-white/95 to-gray-100/90" />
 
       {/* Top Left Blue Flower */}
-      <div className="absolute top-0 h-60 w-60 animate-slide-in-top-left">
+      <div className="absolute top-0 h-70 w-70 animate-slide-in-top-left">
         <img
           src="/images/blue_rose.png"
           alt="Blue Flower Decoration"
-          className="h-500 w-500 object-contain"
+          className="
+          h-full 
+          w-full 
+          object-contain
+          -translate-x-20
+          -translate-y-20"
         />
       </div>
 
       {/* Bottom Right Blue Flower */}
-      <div className="pointer-events-none absolute bottom-0 right-0 h-60 w-60 animate-slide-in-bottom-right">
+      <div className="pointer-events-none absolute bottom-0 right-0 h-70 w-70 animate-slide-in-bottom-right">
         <img
           src="/images/blue_rose.png"
           alt="Blue Flower Decoration"
@@ -27,8 +32,8 @@ export function AnimatedInvitation() {
                 w-full
                 object-contain
                 rotate-180
-                translate-x-8
-                translate-y-10
+                translate-x-20
+                translate-y-20
               "
         />
       </div>
