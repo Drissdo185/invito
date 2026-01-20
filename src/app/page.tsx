@@ -55,15 +55,6 @@ export default function Home() {
                 <div className="w-full max-w-sm">
                   <AnimatedInvitation />
                 </div>
-
-                {/* Blue Rose Decoration */}
-                <div className="relative max-w-md">
-                  <img
-                    src="/images/blue_rose.jpeg"
-                    alt="Blue Rose Decoration"
-                    className="h-auto w-full animate-fade-in rounded-lg shadow-lg"
-                  />
-                </div>
               </div>
             </div>
           </div>

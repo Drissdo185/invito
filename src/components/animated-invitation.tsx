@@ -2,43 +2,34 @@
 
 export function AnimatedInvitation() {
   return (
-    <div className="relative mx-auto aspect-[9/16] w-full max-w-sm overflow-hidden rounded-lg bg-[url('/images/template.png')] bg-cover bg-center shadow-2xl">
+    <div
+      className="relative mx-auto aspect-[9/16] w-full max-w-sm overflow-hidden rounded-lg shadow-2xl"
+    >
       {/* Marble Background Effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50/90 via-white/95 to-gray-100/90" />
 
       {/* Top Left Blue Flower */}
-      <div className="absolute left-0 top-0 h-48 w-48 animate-slide-in-top-left">
+      <div className="absolute top-0 h-60 w-60 animate-slide-in-top-left">
         <img
-          src="/images/blue_rose.jpeg"
+          src="/images/blue_rose.png"
           alt="Blue Flower Decoration"
-          className="h-full w-full object-contain"
+          className="h-500 w-500 object-contain"
         />
       </div>
 
       {/* Bottom Right Blue Flower */}
-      <div className="absolute bottom-0 right-0 h-48 w-48 animate-slide-in-bottom-right">
+      <div className="pointer-events-none absolute bottom-0 right-0 h-60 w-60 animate-slide-in-bottom-right">
         <img
-          src="/images/blue_rose.jpeg"
+          src="/images/blue_rose.png"
           alt="Blue Flower Decoration"
-          className="h-full w-full rotate-180 object-contain"
-        />
-      </div>
-
-      {/* Grey Foliage - Top Left */}
-      <div className="absolute left-8 top-32 h-24 w-24 animate-blossom-fade opacity-40">
-        <img
-          src="/images/blue_rose.jpeg"
-          alt="Foliage"
-          className="h-full w-full object-contain grayscale"
-        />
-      </div>
-
-      {/* Grey Foliage - Bottom Right */}
-      <div className="absolute bottom-32 right-8 h-24 w-24 animate-blossom-fade opacity-40">
-        <img
-          src="/images/blue_rose.jpeg"
-          alt="Foliage"
-          className="h-full w-full rotate-180 object-contain grayscale"
+          className="
+                h-full
+                w-full
+                object-contain
+                rotate-180
+                translate-x-8
+                translate-y-10
+              "
         />
       </div>
 
@@ -46,9 +37,7 @@ export function AnimatedInvitation() {
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-8 text-center">
         {/* Couple Names */}
         <div className="mb-6 animate-fade-up-names">
-          <h1 className="font-serif text-5xl font-light text-gray-800">
-            John
-          </h1>
+          <h1 className="font-serif text-5xl font-light text-gray-800">John</h1>
           <p className="my-2 text-lg font-light text-gray-600">AND</p>
           <h1 className="font-serif text-5xl font-light text-gray-800">
             Claudia
